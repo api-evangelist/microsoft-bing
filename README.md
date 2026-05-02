@@ -10,7 +10,7 @@ Microsoft Bing provides a comprehensive suite of search APIs that enable develop
 ## Timestamps
 
 - **Created:** 2026-03-13
-- **Modified:** 2026-03-13
+- **Modified:** 2026-04-28
 
 ## APIs
 
