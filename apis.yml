@@ -38,6 +38,8 @@ apis:
         url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
       - type: API Reference
         url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
+      - url: openapi/microsoft-bing-openapi.yml
+        type: OpenAPI
   - aid: microsoft-bing:image-search
     name: Bing Image Search API
     description: >-
