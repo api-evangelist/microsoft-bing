@@ -36,7 +36,7 @@ apis:
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
-      - type: API Reference
+      - type: APIReference
         url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
       - url: openapi/microsoft-bing-openapi.yml
         type: OpenAPI
@@ -185,15 +185,15 @@ common:
     url: https://portal.azure.com/
   - type: Pricing
     url: https://www.microsoft.com/en-us/bing/apis/pricing
-  - type: Getting Started
+  - type: GettingStarted
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/quickstarts/quickstart
   - type: Authentication
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/create-bing-search-service-resource
   - type: SDKs
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/quickstarts/sdk/web-search-client-library
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.microsoft.com/en-us/bing/apis/legal
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
