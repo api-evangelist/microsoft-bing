@@ -1,0 +1,72 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Bing Search APIs — VideoSearch
+  description: 'Bing Search APIs — VideoSearch. 1 operations. Lead operation: Video search. Self-contained Naftiko capability
+    covering one Microsoft Bing business surface.'
+  tags:
+  - Microsoft Bing
+  - VideoSearch
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    MICROSOFT_BING_API_KEY: MICROSOFT_BING_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: microsoft-bing-videosearch
+    baseUri: https://api.bing.microsoft.com
+    description: Bing Search APIs — VideoSearch business capability. Self-contained, no shared references.
+    resources:
+    - name: v7.0-videos-search
+      path: /v7.0/videos/search
+      operations:
+      - name: videosearch
+        method: GET
+        description: Video search
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: apikey
+      key: Ocp-Apim-Subscription-Key
+      value: '{{env.MICROSOFT_BING_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: microsoft-bing-videosearch-rest
+    port: 8080
+    description: REST adapter for Bing Search APIs — VideoSearch. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/v7-0/videos/search
+      name: v7-0-videos-search
+      description: REST surface for v7.0-videos-search.
+      operations:
+      - method: GET
+        name: videosearch
+        description: Video search
+        call: microsoft-bing-videosearch.videosearch
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: microsoft-bing-videosearch-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Bing Search APIs — VideoSearch. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: video-search
+      description: Video search
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: microsoft-bing-videosearch.videosearch
+      outputParameters:
+      - type: object
+        mapping: $.

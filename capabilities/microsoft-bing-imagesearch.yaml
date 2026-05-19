@@ -1,0 +1,72 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Bing Search APIs — ImageSearch
+  description: 'Bing Search APIs — ImageSearch. 1 operations. Lead operation: Image search. Self-contained Naftiko capability
+    covering one Microsoft Bing business surface.'
+  tags:
+  - Microsoft Bing
+  - ImageSearch
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    MICROSOFT_BING_API_KEY: MICROSOFT_BING_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: microsoft-bing-imagesearch
+    baseUri: https://api.bing.microsoft.com
+    description: Bing Search APIs — ImageSearch business capability. Self-contained, no shared references.
+    resources:
+    - name: v7.0-images-search
+      path: /v7.0/images/search
+      operations:
+      - name: imagesearch
+        method: GET
+        description: Image search
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: apikey
+      key: Ocp-Apim-Subscription-Key
+      value: '{{env.MICROSOFT_BING_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: microsoft-bing-imagesearch-rest
+    port: 8080
+    description: REST adapter for Bing Search APIs — ImageSearch. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/v7-0/images/search
+      name: v7-0-images-search
+      description: REST surface for v7.0-images-search.
+      operations:
+      - method: GET
+        name: imagesearch
+        description: Image search
+        call: microsoft-bing-imagesearch.imagesearch
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: microsoft-bing-imagesearch-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Bing Search APIs — ImageSearch. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: image-search
+      description: Image search
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: microsoft-bing-imagesearch.imagesearch
+      outputParameters:
+      - type: object
+        mapping: $.

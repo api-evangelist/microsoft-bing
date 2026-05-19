@@ -1,0 +1,81 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Bing Search APIs — CustomSearch
+  description: 'Bing Search APIs — CustomSearch. 1 operations. Lead operation: Custom search. Self-contained Naftiko capability
+    covering one Microsoft Bing business surface.'
+  tags:
+  - Microsoft Bing
+  - CustomSearch
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    MICROSOFT_BING_API_KEY: MICROSOFT_BING_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: microsoft-bing-customsearch
+    baseUri: https://api.bing.microsoft.com
+    description: Bing Search APIs — CustomSearch business capability. Self-contained, no shared references.
+    resources:
+    - name: v7.0-custom-search
+      path: /v7.0/custom/search
+      operations:
+      - name: customsearch
+        method: GET
+        description: Custom search
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: customConfig
+          in: query
+          type: string
+          required: true
+    authentication:
+      type: apikey
+      key: Ocp-Apim-Subscription-Key
+      value: '{{env.MICROSOFT_BING_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: microsoft-bing-customsearch-rest
+    port: 8080
+    description: REST adapter for Bing Search APIs — CustomSearch. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/v7-0/custom/search
+      name: v7-0-custom-search
+      description: REST surface for v7.0-custom-search.
+      operations:
+      - method: GET
+        name: customsearch
+        description: Custom search
+        call: microsoft-bing-customsearch.customsearch
+        with:
+          customConfig: rest.customConfig
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: microsoft-bing-customsearch-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Bing Search APIs — CustomSearch. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: custom-search
+      description: Custom search
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: microsoft-bing-customsearch.customsearch
+      with:
+        customConfig: tools.customConfig
+      outputParameters:
+      - type: object
+        mapping: $.

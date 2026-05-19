@@ -1,0 +1,82 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Bing Search APIs — VisualSearch
+  description: 'Bing Search APIs — VisualSearch. 1 operations. Lead operation: Visual search. Self-contained Naftiko capability
+    covering one Microsoft Bing business surface.'
+  tags:
+  - Microsoft Bing
+  - VisualSearch
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    MICROSOFT_BING_API_KEY: MICROSOFT_BING_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: microsoft-bing-visualsearch
+    baseUri: https://api.bing.microsoft.com
+    description: Bing Search APIs — VisualSearch business capability. Self-contained, no shared references.
+    resources:
+    - name: v7.0-images-visualsearch
+      path: /v7.0/images/visualsearch
+      operations:
+      - name: visualsearch
+        method: POST
+        description: Visual search
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: apikey
+      key: Ocp-Apim-Subscription-Key
+      value: '{{env.MICROSOFT_BING_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: microsoft-bing-visualsearch-rest
+    port: 8080
+    description: REST adapter for Bing Search APIs — VisualSearch. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/v7-0/images/visualsearch
+      name: v7-0-images-visualsearch
+      description: REST surface for v7.0-images-visualsearch.
+      operations:
+      - method: POST
+        name: visualsearch
+        description: Visual search
+        call: microsoft-bing-visualsearch.visualsearch
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: microsoft-bing-visualsearch-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Bing Search APIs — VisualSearch. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: visual-search
+      description: Visual search
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: microsoft-bing-visualsearch.visualsearch
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
