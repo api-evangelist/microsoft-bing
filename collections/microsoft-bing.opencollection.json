@@ -1,0 +1,378 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Bing Search APIs",
+    "version": "v7.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Ocp-Apim-Subscription-Key",
+      "value": "{{Ocp-Apim-Subscription-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "WebSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Web search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safeSearch",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Web search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "ImageSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Image search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/images/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safeSearch",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Image search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "NewsSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "News search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/news/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "News search"
+        },
+        {
+          "info": {
+            "name": "Trending news",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/news",
+            "params": [
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "category",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Trending news"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "VideoSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Video search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/videos/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Video search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "EntitySearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Entity search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/entities",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Entity search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "VisualSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Visual search",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bing.microsoft.com/v7.0/images/visualsearch",
+            "body": {
+              "type": "multipart-form",
+              "data": [
+                {
+                  "name": "image",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "knowledgeRequest",
+                  "type": "text",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "docs": "Visual search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "CustomSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Custom search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/custom/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "customConfig",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Custom search"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "SpellCheck",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Spell check",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/spellcheck",
+            "params": [
+              {
+                "name": "text",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Spell check"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Autosuggest",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Autosuggest",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/suggestions",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Autosuggest"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

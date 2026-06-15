@@ -1,8 +1,9 @@
 aid: microsoft-bing
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-bing/refs/heads/main/apis.yml
 name: Microsoft Bing
-description: Microsoft Bing provides a comprehensive suite of search APIs that enable developers to integrate web, image,
-  video, news, entity, and visual search capabilities into their applications. These APIs are part of Azure AI Services and
+description: >-
+  Microsoft Bing provides a comprehensive suite of search APIs that enable developers to integrate web, image, video,
+  news, entity, and visual search capabilities into their applications. These APIs are part of Azure AI Services and
   provide intelligent search experiences powered by Bing's web-scale index.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -20,40 +21,23 @@ specificationVersion: '0.20'
 apis:
   - aid: microsoft-bing:web-search
     name: Bing Web Search API
-    description: The Bing Web Search API provides a comprehensive web search experience by returning relevant web pages, images,
+    description: >-
+      The Bing Web Search API provides a comprehensive web search experience by returning relevant web pages, images,
       videos, news, and more for a given search query.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Web Search
-    - Azure AI
+      - Search
+      - Web Search
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
-    - type: APIReference
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-    - url: openapi/microsoft-bing-openapi.yml
-      type: OpenAPI
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-autosuggest.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-customsearch.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-entitysearch.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-imagesearch.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-newssearch.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-spellcheck.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-videosearch.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-visualsearch.yaml
-    - type: NaftikoCapability
-      url: capabilities/microsoft-bing-websearch.yaml
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+      - type: APIReference
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
+      - url: openapi/microsoft-bing-openapi.yml
+        type: OpenAPI
   - aid: microsoft-bing:image-search
     name: Bing Image Search API
     description: The Bing Image Search API enables developers to search for images across the web with advanced filtering options.
@@ -61,12 +45,12 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Images
-    - Azure AI
+      - Search
+      - Images
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   - aid: microsoft-bing:video-search
     name: Bing Video Search API
     description: The Bing Video Search API allows developers to search for videos across the web and retrieve video metadata.
@@ -74,12 +58,12 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Videos
-    - Azure AI
+      - Search
+      - Videos
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview
   - aid: microsoft-bing:news-search
     name: Bing News Search API
     description: The Bing News Search API returns relevant news articles from across the web for a given query.
@@ -87,12 +71,12 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - News
-    - Azure AI
+      - Search
+      - News
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview
   - aid: microsoft-bing:entity-search
     name: Bing Entity Search API
     description: The Bing Entity Search API returns structured information about people, places, organizations, and other entities.
@@ -100,13 +84,13 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Entities
-    - Knowledge Graph
-    - Azure AI
+      - Search
+      - Entities
+      - Knowledge Graph
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview
   - aid: microsoft-bing:autosuggest
     name: Bing Autosuggest API
     description: The Bing Autosuggest API provides intelligent search query suggestions as users type.
@@ -114,13 +98,13 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Autosuggest
-    - Autocomplete
-    - Azure AI
+      - Search
+      - Autosuggest
+      - Autocomplete
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview
   - aid: microsoft-bing:spell-check
     name: Bing Spell Check API
     description: The Bing Spell Check API provides contextual spell checking using machine learning models.
@@ -128,13 +112,13 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Spell Check
-    - NLP
-    - Azure AI
+      - Search
+      - Spell Check
+      - NLP
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview
   - aid: microsoft-bing:visual-search
     name: Bing Visual Search API
     description: The Bing Visual Search API enables image-based search by analyzing uploaded images or image URLs.
@@ -142,41 +126,44 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Visual Search
-    - Image Recognition
-    - Azure AI
+      - Search
+      - Visual Search
+      - Image Recognition
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview
   - aid: microsoft-bing:custom-search
     name: Bing Custom Search API
-    description: The Bing Custom Search API allows developers to create tailored search experiences by defining a custom view
-      of the web.
+    description: >-
+      The Bing Custom Search API allows developers to create tailored search experiences by defining a custom view of
+      the web.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Custom Search
-    - Azure AI
+      - Search
+      - Custom Search
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview
   - aid: microsoft-bing:local-business-search
     name: Bing Local Business Search API
-    description: The Bing Local Business Search API returns information about local businesses based on search queries and location.
+    description: >-
+      The Bing Local Business Search API returns information about local businesses based on search queries and
+      location.
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview
     baseURL: https://api.bing.microsoft.com/
     tags:
-    - Search
-    - Local Business
-    - Places
-    - Azure AI
+      - Search
+      - Local Business
+      - Places
+      - Azure AI
     properties:
-    - type: Documentation
-      url: https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview
 common:
   - type: GitHubOrganization
     url: https://github.com/microsoft
