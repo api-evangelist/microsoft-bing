@@ -165,6 +165,10 @@ apis:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview
 common:
+  - type: DomainSecurity
+    url: security/microsoft-bing-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-bing-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/microsoft
   - type: Portal
@@ -183,6 +187,8 @@ common:
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
+  - url: https://blogs.bing.com/search/feed
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
