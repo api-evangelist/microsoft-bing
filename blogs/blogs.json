@@ -1,0 +1,14 @@
+{
+  "repo": "microsoft-bing",
+  "feeds": [
+    {
+      "source": "https://blogs.bing.com/search/feed",
+      "feed_url": "https://blogs.bing.com/search/feed",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 10
+}
