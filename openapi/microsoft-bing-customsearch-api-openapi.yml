@@ -1,0 +1,52 @@
+openapi: 3.1.0
+info:
+  title: Bing Search APIs Autosuggest CustomSearch API
+  description: Minimal OpenAPI definition for the Bing Search APIs (Web, Image, News, Video, Entity, Visual, Custom, Spell Check, Autosuggest).
+  version: v7.0
+  x-generated-from: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+  x-generated-by: claude-crawl-2026-05-08
+servers:
+- url: https://api.bing.microsoft.com
+  description: Bing Search API host
+security:
+- subscriptionKey: []
+tags:
+- name: CustomSearch
+paths:
+  /v7.0/custom/search:
+    get:
+      tags:
+      - CustomSearch
+      summary: Custom search
+      operationId: customSearch
+      parameters:
+      - $ref: '#/components/parameters/Query'
+      - in: query
+        name: customConfig
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericObject'
+components:
+  parameters:
+    Query:
+      in: query
+      name: q
+      required: true
+      schema:
+        type: string
+  schemas:
+    GenericObject:
+      type: object
+      additionalProperties: true
+  securitySchemes:
+    subscriptionKey:
+      type: apiKey
+      in: header
+      name: Ocp-Apim-Subscription-Key
