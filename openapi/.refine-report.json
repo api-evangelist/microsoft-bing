@@ -1,0 +1,30 @@
+{
+  "provider": "microsoft-bing",
+  "sources": [
+    "microsoft-bing-autosuggest-api-openapi.yml",
+    "microsoft-bing-customsearch-api-openapi.yml",
+    "microsoft-bing-entitysearch-api-openapi.yml",
+    "microsoft-bing-imagesearch-api-openapi.yml",
+    "microsoft-bing-newssearch-api-openapi.yml",
+    "microsoft-bing-spellcheck-api-openapi.yml",
+    "microsoft-bing-videosearch-api-openapi.yml",
+    "microsoft-bing-visualsearch-api-openapi.yml",
+    "microsoft-bing-websearch-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-bing-autosuggest-api-openapi.yml",
+    "microsoft-bing-customsearch-api-openapi.yml",
+    "microsoft-bing-entitysearch-api-openapi.yml",
+    "microsoft-bing-imagesearch-api-openapi.yml",
+    "microsoft-bing-newssearch-api-openapi.yml",
+    "microsoft-bing-spellcheck-api-openapi.yml",
+    "microsoft-bing-videosearch-api-openapi.yml",
+    "microsoft-bing-visualsearch-api-openapi.yml",
+    "microsoft-bing-websearch-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
