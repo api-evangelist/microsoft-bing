@@ -1,0 +1,64 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Bing Search APIs Autosuggest WebSearch API",
+    "version": "v7.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Ocp-Apim-Subscription-Key",
+      "value": "{{Ocp-Apim-Subscription-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "WebSearch",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Web search",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bing.microsoft.com/v7.0/search",
+            "params": [
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "mkt",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "safeSearch",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Web search"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
