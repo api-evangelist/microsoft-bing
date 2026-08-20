@@ -22,6 +22,15 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-
 tags:
   - Search
   - Web Search
+  - Image
+  - Videos
+  - News
+  - Azure AI
+  - Autosuggest
+  - Visual Search
+tags_raw:
+  - Search
+  - Web Search
   - Images
   - Videos
   - News
@@ -41,6 +50,10 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Search
+  - Image
+  - Azure AI
+  tags_raw:
   - Search
   - Images
   - Azure AI
@@ -187,6 +200,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Custom Search
+  tags_raw:
   - CustomSearch
   properties:
   - type: OpenAPI
@@ -201,6 +216,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Entity Search
+  tags_raw:
   - EntitySearch
   properties:
   - type: OpenAPI
@@ -215,6 +232,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Image Search
+  tags_raw:
   - ImageSearch
   properties:
   - type: OpenAPI
@@ -229,6 +248,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - News Search
+  tags_raw:
   - NewsSearch
   properties:
   - type: OpenAPI
@@ -243,6 +264,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Spell Check
+  tags_raw:
   - SpellCheck
   properties:
   - type: OpenAPI
@@ -257,6 +280,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Video Search
+  tags_raw:
   - VideoSearch
   properties:
   - type: OpenAPI
@@ -271,6 +296,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Visual Search
+  tags_raw:
   - VisualSearch
   properties:
   - type: OpenAPI
@@ -285,6 +312,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Web Search
+  tags_raw:
   - WebSearch
   properties:
   - type: OpenAPI
