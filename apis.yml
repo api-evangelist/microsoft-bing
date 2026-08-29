@@ -5,6 +5,18 @@ description: >-
   Microsoft Bing provides a comprehensive suite of search APIs that enable developers to integrate web, image, video,
   news, entity, and visual search capabilities into their applications. These APIs are part of Azure AI Services and
   provide intelligent search experiences powered by Bing's web-scale index.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
