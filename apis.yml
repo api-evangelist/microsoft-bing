@@ -212,7 +212,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - CustomSearch
+  - Custom Search
   tags_raw:
   - CustomSearch
   properties:
@@ -228,7 +228,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - EntitySearch
+  - Entity Search
   tags_raw:
   - EntitySearch
   properties:
@@ -244,7 +244,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - ImageSearch
+  - Image Search
   tags_raw:
   - ImageSearch
   properties:
@@ -260,7 +260,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - NewsSearch
+  - News Search
   tags_raw:
   - NewsSearch
   properties:
@@ -276,7 +276,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - SpellCheck
+  - Spell Check
   tags_raw:
   - SpellCheck
   properties:
@@ -292,7 +292,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - VideoSearch
+  - Video Search
   tags_raw:
   - VideoSearch
   properties:
@@ -308,7 +308,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - VisualSearch
+  - Visual Search
   tags_raw:
   - VisualSearch
   properties:
@@ -324,7 +324,7 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - WebSearch
+  - Web Search
   tags_raw:
   - WebSearch
   properties:
