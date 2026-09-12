@@ -1,5 +1,5 @@
 aid: microsoft-bing
-url: https://raw.githubusercontent.com/api-evangelist/microsoft-bing/refs/heads/main/apis.yml
+url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/quickstarts/quickstart
 name: Microsoft Bing
 description: >-
   Microsoft Bing provides a comprehensive suite of search APIs that enable developers to integrate web, image, video,
