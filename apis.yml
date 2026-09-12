@@ -336,6 +336,8 @@ apis:
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
 common:
+  - type: Website
+    url: https://www.microsoft.com/
   - type: AgenticAccess
     url: agentic-access/microsoft-bing-agentic-access.yml
   - type: DomainSecurity
@@ -365,3 +367,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-parent: microsoft
+x-relationship: product

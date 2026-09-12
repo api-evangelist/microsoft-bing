@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Bing Search APIs Autosuggest WebSearch API
+  title: Bing Search APIs Autosuggest Web Search API
   description: Minimal OpenAPI definition for the Bing Search APIs (Web, Image, News, Video, Entity, Visual, Custom, Spell Check, Autosuggest).
   version: v7.0
   x-generated-from: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
@@ -34,16 +34,27 @@ paths:
                 $ref: '#/components/schemas/GenericObject'
 components:
   parameters:
-    Count:
-      in: query
-      name: count
-      schema:
-        type: integer
     Offset:
       in: query
       name: offset
       schema:
         type: integer
+    Mkt:
+      in: query
+      name: mkt
+      schema:
+        type: string
+    Count:
+      in: query
+      name: count
+      schema:
+        type: integer
+    Query:
+      in: query
+      name: q
+      required: true
+      schema:
+        type: string
     SafeSearch:
       in: query
       name: safeSearch
@@ -53,17 +64,6 @@ components:
         - false
         - Moderate
         - Strict
-    Query:
-      in: query
-      name: q
-      required: true
-      schema:
-        type: string
-    Mkt:
-      in: query
-      name: mkt
-      schema:
-        type: string
   schemas:
     GenericObject:
       type: object
