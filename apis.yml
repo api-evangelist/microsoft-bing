@@ -207,130 +207,114 @@ apis:
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-customsearch-api
-  name: Microsoft Bing CustomSearch API
-  description: The CustomSearch API from Microsoft Bing — 1 operation(s) for customsearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-custom-search-api
+  name: Microsoft Bing Custom Search API
+  description: The Custom Search API from Microsoft Bing — 1 operation(s) for custom search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - Custom Search
-  tags_raw:
-  - CustomSearch
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-customsearch-api-openapi.yml
+    url: openapi/microsoft-bing-custom-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-entitysearch-api
-  name: Microsoft Bing EntitySearch API
-  description: The EntitySearch API from Microsoft Bing — 1 operation(s) for entitysearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-entity-search-api
+  name: Microsoft Bing Entity Search API
+  description: The Entity Search API from Microsoft Bing — 1 operation(s) for entity search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - Entity Search
-  tags_raw:
-  - EntitySearch
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-entitysearch-api-openapi.yml
+    url: openapi/microsoft-bing-entity-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-imagesearch-api
-  name: Microsoft Bing ImageSearch API
-  description: The ImageSearch API from Microsoft Bing — 1 operation(s) for imagesearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-image-search-api
+  name: Microsoft Bing Image Search API
+  description: The Image Search API from Microsoft Bing — 1 operation(s) for image search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - Image Search
-  tags_raw:
-  - ImageSearch
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-imagesearch-api-openapi.yml
+    url: openapi/microsoft-bing-image-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-newssearch-api
-  name: Microsoft Bing NewsSearch API
-  description: The NewsSearch API from Microsoft Bing — 2 operation(s) for newssearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-news-search-api
+  name: Microsoft Bing News Search API
+  description: The News Search API from Microsoft Bing — 2 operation(s) for news search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - News Search
-  tags_raw:
-  - NewsSearch
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-newssearch-api-openapi.yml
+    url: openapi/microsoft-bing-news-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-spellcheck-api
-  name: Microsoft Bing SpellCheck API
-  description: The SpellCheck API from Microsoft Bing — 1 operation(s) for spellcheck.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-spell-check-api
+  name: Microsoft Bing Spell Check API
+  description: The Spell Check API from Microsoft Bing — 1 operation(s) for spell check.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - Spell Check
-  tags_raw:
-  - SpellCheck
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-spellcheck-api-openapi.yml
+    url: openapi/microsoft-bing-spell-check-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-videosearch-api
-  name: Microsoft Bing VideoSearch API
-  description: The VideoSearch API from Microsoft Bing — 1 operation(s) for videosearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-video-search-api
+  name: Microsoft Bing Video Search API
+  description: The Video Search API from Microsoft Bing — 1 operation(s) for video search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - Video Search
-  tags_raw:
-  - VideoSearch
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-videosearch-api-openapi.yml
+    url: openapi/microsoft-bing-video-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-visualsearch-api
-  name: Microsoft Bing VisualSearch API
-  description: The VisualSearch API from Microsoft Bing — 1 operation(s) for visualsearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-visual-search-api
+  name: Microsoft Bing Visual search API
+  description: The Visual search API from Microsoft Bing — 1 operation(s) for visual search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - Visual Search
-  tags_raw:
-  - VisualSearch
+  - Visual search
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-visualsearch-api-openapi.yml
+    url: openapi/microsoft-bing-visual-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
-- aid: microsoft-bing:microsoft-bing-websearch-api
-  name: Microsoft Bing WebSearch API
-  description: The WebSearch API from Microsoft Bing — 1 operation(s) for websearch.
-  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
+- aid: microsoft-bing:microsoft-bing-web-search-api
+  name: Microsoft Bing Web Search API
+  description: The Web Search API from Microsoft Bing — 1 operation(s) for web search.
+  humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
   - Web Search
-  tags_raw:
-  - WebSearch
   properties:
   - type: OpenAPI
-    url: openapi/microsoft-bing-websearch-api-openapi.yml
+    url: openapi/microsoft-bing-web-search-api-openapi.yml
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
   - type: APIReference
