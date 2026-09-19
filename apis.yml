@@ -36,7 +36,7 @@ tags:
   - Search
   - Web Search
   - Image
-  - Videos
+  - Video
   - News
   - Azure AI
   - Autosuggest
@@ -82,6 +82,10 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Search
+  - Video
+  - Azure AI
+  tags_raw:
   - Search
   - Videos
   - Azure AI
@@ -297,6 +301,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Visual Search
+  tags_raw:
   - Visual search
   properties:
   - type: OpenAPI
