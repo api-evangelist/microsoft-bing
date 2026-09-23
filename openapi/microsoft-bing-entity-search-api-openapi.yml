@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Bing Search APIs Autosuggest Spell Check API
+  title: Bing Search Entity Search API
   description: Minimal OpenAPI definition for the Bing Search APIs (Web, Image, News, Video, Entity, Visual, Custom, Spell Check, Autosuggest).
   version: v7.0
   x-generated-from: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
@@ -11,27 +11,16 @@ servers:
 security:
 - subscriptionKey: []
 tags:
-- name: SpellCheck
+- name: Entity Search
 paths:
-  /v7.0/spellcheck:
+  /v7.0/entities:
     get:
       tags:
-      - SpellCheck
-      summary: Spell check
-      operationId: spellCheck
+      - Entity Search
+      summary: Entity search
+      operationId: entitySearch
       parameters:
-      - in: query
-        name: text
-        required: true
-        schema:
-          type: string
-      - in: query
-        name: mode
-        schema:
-          type: string
-          enum:
-          - proof
-          - spell
+      - $ref: '#/components/parameters/Query'
       - $ref: '#/components/parameters/Mkt'
       responses:
         '200':
@@ -41,16 +30,22 @@ paths:
               schema:
                 $ref: '#/components/schemas/GenericObject'
 components:
+  schemas:
+    GenericObject:
+      type: object
+      additionalProperties: true
   parameters:
+    Query:
+      in: query
+      name: q
+      required: true
+      schema:
+        type: string
     Mkt:
       in: query
       name: mkt
       schema:
         type: string
-  schemas:
-    GenericObject:
-      type: object
-      additionalProperties: true
   securitySchemes:
     subscriptionKey:
       type: apiKey

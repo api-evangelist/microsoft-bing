@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Bing Search APIs Autosuggest Entity Search API
+  title: Bing Search News Search API
   description: Minimal OpenAPI definition for the Bing Search APIs (Web, Image, News, Video, Entity, Visual, Custom, Spell Check, Autosuggest).
   version: v7.0
   x-generated-from: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
@@ -11,16 +11,18 @@ servers:
 security:
 - subscriptionKey: []
 tags:
-- name: EntitySearch
+- name: News Search
 paths:
-  /v7.0/entities:
+  /v7.0/news/search:
     get:
       tags:
-      - EntitySearch
-      summary: Entity search
-      operationId: entitySearch
+      - News Search
+      summary: News search
+      operationId: newsSearch
       parameters:
       - $ref: '#/components/parameters/Query'
+      - $ref: '#/components/parameters/Count'
+      - $ref: '#/components/parameters/Offset'
       - $ref: '#/components/parameters/Mkt'
       responses:
         '200':
@@ -29,8 +31,36 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GenericObject'
+  /v7.0/news:
+    get:
+      tags:
+      - News Search
+      summary: Trending news
+      operationId: newsTrending
+      parameters:
+      - $ref: '#/components/parameters/Mkt'
+      - in: query
+        name: category
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericObject'
 components:
+  schemas:
+    GenericObject:
+      type: object
+      additionalProperties: true
   parameters:
+    Offset:
+      in: query
+      name: offset
+      schema:
+        type: integer
     Mkt:
       in: query
       name: mkt
@@ -42,10 +72,11 @@ components:
       required: true
       schema:
         type: string
-  schemas:
-    GenericObject:
-      type: object
-      additionalProperties: true
+    Count:
+      in: query
+      name: count
+      schema:
+        type: integer
   securitySchemes:
     subscriptionKey:
       type: apiKey

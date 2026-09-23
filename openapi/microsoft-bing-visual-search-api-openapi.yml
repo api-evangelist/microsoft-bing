@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Bing Search APIs Autosuggest Visual Search API
+  title: Bing Search Visual Search API
   description: Minimal OpenAPI definition for the Bing Search APIs (Web, Image, News, Video, Entity, Visual, Custom, Spell Check, Autosuggest).
   version: v7.0
   x-generated-from: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
@@ -11,12 +11,12 @@ servers:
 security:
 - subscriptionKey: []
 tags:
-- name: VisualSearch
+- name: Visual search
 paths:
   /v7.0/images/visualsearch:
     post:
       tags:
-      - VisualSearch
+      - Visual search
       summary: Visual search
       operationId: visualSearch
       requestBody:
