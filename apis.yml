@@ -41,6 +41,7 @@ tags:
   - Azure AI
   - Autosuggest
   - Visual Search
+  - Defunct
 tags_raw:
   - Search
   - Web Search
@@ -50,11 +51,17 @@ tags_raw:
   - Azure AI
   - Autosuggest
   - Visual Search
+  - Defunct
 created: '2026-03-13'
 modified: '2026-05-19'
 specificationVersion: '0.23'
 apis:
 - aid: microsoft-bing:image-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Image Search API
   description: >-
     The Bing Image Search API enables developers to search for images across the web with advanced filtering
@@ -74,6 +81,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
 - aid: microsoft-bing:video-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Video Search API
   description: >-
     The Bing Video Search API allows developers to search for videos across the web and retrieve video
@@ -93,6 +105,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview
 - aid: microsoft-bing:news-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing News Search API
   description: >-
     The Bing News Search API returns relevant news articles from across the web for a given query.
@@ -107,6 +124,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview
 - aid: microsoft-bing:entity-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Entity Search API
   description: >-
     The Bing Entity Search API returns structured information about people, places, organizations, and
@@ -123,6 +145,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview
 - aid: microsoft-bing:autosuggest
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Autosuggest API
   description: The Bing Autosuggest API provides intelligent search query suggestions as users type.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -137,6 +164,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview
 - aid: microsoft-bing:spell-check
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Spell Check API
   description: >-
     The Bing Spell Check API provides contextual spell checking using machine learning models.
@@ -152,6 +184,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview
 - aid: microsoft-bing:visual-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Visual Search API
   description: >-
     The Bing Visual Search API enables image-based search by analyzing uploaded images or image URLs.
@@ -167,6 +204,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview
 - aid: microsoft-bing:custom-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Custom Search API
   description: >-
     The Bing Custom Search API allows developers to create tailored search experiences by defining a custom
@@ -182,6 +224,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview
 - aid: microsoft-bing:local-business-search
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Bing Local Business Search API
   description: >-
     The Bing Local Business Search API returns information about local businesses based on search queries
@@ -198,6 +245,11 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview
 - aid: microsoft-bing:microsoft-bing-autosuggest-api
+  x-status: retired
+  x-status-basis: >-
+    Microsoft Lifecycle, fetched 2026-09-23: Bing Search APIs retired 2025-08-11; existing instances decommissioned,
+    no new signups; successor is Grounding with Bing Search in Azure AI Agents. https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+    (roadmap#623)
   name: Microsoft Bing Autosuggest API
   description: The Autosuggest API from Microsoft Bing — 1 operation(s) for autosuggest.
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview
@@ -301,8 +353,6 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
-  - Visual Search
-  tags_raw:
   - Visual search
   properties:
   - type: OpenAPI
@@ -359,3 +409,7 @@ maintainers:
     email: kin@apievangelist.com
 x-parent: microsoft
 x-relationship: product
+x-status: defunct
+x-successor: https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/bing-grounding
+x-status-basis: >-
+  Bing Search APIs retired 2025-08-11 per Microsoft Lifecycle (https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement, fetched 2026-09-23): existing instances decommissioned, no new signups. Every API in this record is that product. Endpoints still answer 401 to a keyless probe, so the lifecycle page is the evidence. roadmap#623

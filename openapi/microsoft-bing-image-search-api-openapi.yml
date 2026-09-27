@@ -33,21 +33,21 @@ paths:
               schema:
                 $ref: '#/components/schemas/GenericObject'
 components:
-  schemas:
-    GenericObject:
-      type: object
-      additionalProperties: true
   parameters:
+    SafeSearch:
+      in: query
+      name: safeSearch
+      schema:
+        type: string
+        enum:
+        - false
+        - Moderate
+        - Strict
     Offset:
       in: query
       name: offset
       schema:
         type: integer
-    Mkt:
-      in: query
-      name: mkt
-      schema:
-        type: string
     Query:
       in: query
       name: q
@@ -59,15 +59,15 @@ components:
       name: count
       schema:
         type: integer
-    SafeSearch:
+    Mkt:
       in: query
-      name: safeSearch
+      name: mkt
       schema:
         type: string
-        enum:
-        - false
-        - Moderate
-        - Strict
+  schemas:
+    GenericObject:
+      type: object
+      additionalProperties: true
   securitySchemes:
     subscriptionKey:
       type: apiKey

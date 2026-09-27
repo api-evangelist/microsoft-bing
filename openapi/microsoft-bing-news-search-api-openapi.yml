@@ -51,21 +51,12 @@ paths:
               schema:
                 $ref: '#/components/schemas/GenericObject'
 components:
-  schemas:
-    GenericObject:
-      type: object
-      additionalProperties: true
   parameters:
     Offset:
       in: query
       name: offset
       schema:
         type: integer
-    Mkt:
-      in: query
-      name: mkt
-      schema:
-        type: string
     Query:
       in: query
       name: q
@@ -77,6 +68,15 @@ components:
       name: count
       schema:
         type: integer
+    Mkt:
+      in: query
+      name: mkt
+      schema:
+        type: string
+  schemas:
+    GenericObject:
+      type: object
+      additionalProperties: true
   securitySchemes:
     subscriptionKey:
       type: apiKey
