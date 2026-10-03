@@ -31,15 +31,15 @@ paths:
                 $ref: '#/components/schemas/GenericObject'
 components:
   parameters:
-    Mkt:
-      in: query
-      name: mkt
-      schema:
-        type: string
     Query:
       in: query
       name: q
       required: true
+      schema:
+        type: string
+    Mkt:
+      in: query
+      name: mkt
       schema:
         type: string
   schemas:

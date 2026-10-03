@@ -34,18 +34,9 @@ paths:
                 $ref: '#/components/schemas/GenericObject'
 components:
   parameters:
-    SafeSearch:
+    Count:
       in: query
-      name: safeSearch
-      schema:
-        type: string
-        enum:
-        - false
-        - Moderate
-        - Strict
-    Offset:
-      in: query
-      name: offset
+      name: count
       schema:
         type: integer
     Query:
@@ -54,9 +45,9 @@ components:
       required: true
       schema:
         type: string
-    Count:
+    Offset:
       in: query
-      name: count
+      name: offset
       schema:
         type: integer
     Mkt:
@@ -64,6 +55,15 @@ components:
       name: mkt
       schema:
         type: string
+    SafeSearch:
+      in: query
+      name: safeSearch
+      schema:
+        type: string
+        enum:
+        - 'Off'
+        - Moderate
+        - Strict
   schemas:
     GenericObject:
       type: object

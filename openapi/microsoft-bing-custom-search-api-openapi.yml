@@ -34,10 +34,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/GenericObject'
 components:
-  schemas:
-    GenericObject:
-      type: object
-      additionalProperties: true
   parameters:
     Query:
       in: query
@@ -45,6 +41,10 @@ components:
       required: true
       schema:
         type: string
+  schemas:
+    GenericObject:
+      type: object
+      additionalProperties: true
   securitySchemes:
     subscriptionKey:
       type: apiKey
