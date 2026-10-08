@@ -376,6 +376,12 @@ apis:
   - type: APIReference
     url: https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints
 common:
+  - type: Plans
+    url: plans/microsoft-bing-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/microsoft-bing-rate-limits.yml
+  - type: FinOps
+    url: finops/microsoft-bing-finops.yml
   - type: Website
     url: https://www.microsoft.com/
   - type: AgenticAccess
