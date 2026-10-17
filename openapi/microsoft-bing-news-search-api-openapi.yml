@@ -52,11 +52,6 @@ paths:
                 $ref: '#/components/schemas/GenericObject'
 components:
   parameters:
-    Count:
-      in: query
-      name: count
-      schema:
-        type: integer
     Offset:
       in: query
       name: offset
@@ -73,6 +68,11 @@ components:
       required: true
       schema:
         type: string
+    Count:
+      in: query
+      name: count
+      schema:
+        type: integer
   schemas:
     GenericObject:
       type: object
