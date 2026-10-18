@@ -178,6 +178,11 @@ apis:
   tags:
   - Search
   - Spell Check
+  - Natural Language Processing
+  - Azure AI
+  tags_raw:
+  - Search
+  - Spell Check
   - NLP
   - Azure AI
   properties:
@@ -353,6 +358,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview
   baseURL: https://api.bing.microsoft.com/
   tags:
+  - Visual Search
+  tags_raw:
   - Visual search
   properties:
   - type: OpenAPI
