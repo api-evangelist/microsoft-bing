@@ -1,4 +1,4 @@
-# Microsoft Bing (microsoft-bing)
+# Microsoft Bing
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,238 +64,112 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 Microsoft Bing provides a comprehensive suite of search APIs that enable developers to integrate web, image, video, news, entity, and visual search capabilities into their applications. These APIs are part of Azure AI Services and provide intelligent search experiences powered by Bing's web-scale index.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/microsoft-bing/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/microsoft-bing/refs/heads/main/apis.yml)
+**Areas:** Search · Web Search · Image · Video · News · Azure AI · Autosuggest · Visual Search · Defunct
 
-## Tags
+## Microsoft Bing on APIs.io (historical record)
 
-- Search
-- Web Search
-- Images
-- Videos
-- News
-- Azure AI
-- Autosuggest
-- Visual Search
+Everything profiled for Microsoft Bing is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/microsoft-bing/](https://apis.io/providers/microsoft-bing/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (18)
 
-- **Created:** 2026-03-13
-- **Modified:** 2026-05-19
+- [Bing Image Search API](https://apis.io/apis/microsoft-bing/image-search/) — The Bing Image Search API enables developers to search for images across the web with advanced filtering options.
+- [Bing Video Search API](https://apis.io/apis/microsoft-bing/video-search/) — The Bing Video Search API allows developers to search for videos across the web and retrieve video metadata.
+- [Bing News Search API](https://apis.io/apis/microsoft-bing/news-search/) — The Bing News Search API returns relevant news articles from across the web for a given query.
+- [Bing Entity Search API](https://apis.io/apis/microsoft-bing/entity-search/) — The Bing Entity Search API returns structured information about people, places, organizations, and other entities.
+- [Bing Autosuggest API](https://apis.io/apis/microsoft-bing/autosuggest/) — The Bing Autosuggest API provides intelligent search query suggestions as users type.
+- [Bing Spell Check API](https://apis.io/apis/microsoft-bing/spell-check/) — The Bing Spell Check API provides contextual spell checking using machine learning models.
+- [Bing Visual Search API](https://apis.io/apis/microsoft-bing/visual-search/) — The Bing Visual Search API enables image-based search by analyzing uploaded images or image URLs.
+- [Bing Custom Search API](https://apis.io/apis/microsoft-bing/custom-search/) — The Bing Custom Search API allows developers to create tailored search experiences by defining a custom view of the web.
+- [Bing Local Business Search API](https://apis.io/apis/microsoft-bing/local-business-search/) — The Bing Local Business Search API returns information about local businesses based on search queries and location.
+- [Microsoft Bing Autosuggest API](https://apis.io/apis/microsoft-bing/microsoft-bing-autosuggest-api/) — The Autosuggest API from Microsoft Bing — 1 operation(s) for autosuggest.
+- [Microsoft Bing Custom Search API](https://apis.io/apis/microsoft-bing/microsoft-bing-custom-search-api/) — The Custom Search API from Microsoft Bing — 1 operation(s) for custom search.
+- [Microsoft Bing Entity Search API](https://apis.io/apis/microsoft-bing/microsoft-bing-entity-search-api/) — The Entity Search API from Microsoft Bing — 1 operation(s) for entity search.
+- [Microsoft Bing Image Search API](https://apis.io/apis/microsoft-bing/microsoft-bing-image-search-api/) — The Image Search API from Microsoft Bing — 1 operation(s) for image search.
+- [Microsoft Bing News Search API](https://apis.io/apis/microsoft-bing/microsoft-bing-news-search-api/) — The News Search API from Microsoft Bing — 2 operation(s) for news search.
+- [Microsoft Bing Spell Check API](https://apis.io/apis/microsoft-bing/microsoft-bing-spell-check-api/) — The Spell Check API from Microsoft Bing — 1 operation(s) for spell check.
+- [Microsoft Bing Video Search API](https://apis.io/apis/microsoft-bing/microsoft-bing-video-search-api/) — The Video Search API from Microsoft Bing — 1 operation(s) for video search.
+- [Microsoft Bing Visual search API](https://apis.io/apis/microsoft-bing/microsoft-bing-visual-search-api/) — The Visual search API from Microsoft Bing — 1 operation(s) for visual search.
+- [Microsoft Bing Web Search API](https://apis.io/apis/microsoft-bing/microsoft-bing-web-search-api/) — The Web Search API from Microsoft Bing — 1 operation(s) for web search.
 
-## APIs
+### Published properties
 
-### Bing Web Search API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The Bing Web Search API provides a comprehensive web search experience by returning relevant web pages, images, videos, news, and more for a given search query.
+#### Agentic access (1)
 
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Microsoft Bing Agentic Access](https://apis.io/agentic-access/microsoft-bing/microsoft-bing-agentic-access/)
 
-- Search
-- Web Search
-- Azure AI
+#### Collections (10)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/overview)
-- [API Reference](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/reference/endpoints)
-- [OpenAPI](openapi/microsoft-bing-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Bing Search APIs](https://apis.io/collections/microsoft-bing/open-microsoft-bing/)
+- [Bing Search APIs Autosuggest API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-autosuggest-api/)
+- [Bing Search APIs Autosuggest CustomSearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-customsearch-api/)
+- [Bing Search APIs Autosuggest EntitySearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-entitysearch-api/)
+- [Bing Search APIs Autosuggest ImageSearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-imagesearch-api/)
+- [Bing Search APIs Autosuggest NewsSearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-newssearch-api/)
+- [Bing Search APIs Autosuggest SpellCheck API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-spellcheck-api/)
+- [Bing Search APIs Autosuggest VideoSearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-videosearch-api/)
+- [Bing Search APIs Autosuggest VisualSearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-visualsearch-api/)
+- [Bing Search APIs Autosuggest WebSearch API](https://apis.io/collections/microsoft-bing/open-microsoft-bing-websearch-api/)
 
-### Bing Image Search API
+#### Security (2)
 
-The Bing Image Search API enables developers to search for images across the web with advanced filtering options.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
+- [Microsoft Bing Authentication](https://apis.io/security/microsoft-bing/microsoft-bing-authentication/)
+- [Microsoft Bing Domain Security](https://apis.io/security/microsoft-bing/microsoft-bing-domain-security/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- Search
-- Images
-- Azure AI
+Published plans, tiers and prices.
 
-#### Properties
+- [Microsoft Bing Plans Pricing](https://apis.io/plans/microsoft-bing/microsoft-bing-plans-pricing/)
 
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-image-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Rate limits (1)
 
-### Bing Video Search API
+Published request limits.
 
-The Bing Video Search API allows developers to search for videos across the web and retrieve video metadata.
+- [Microsoft Bing Rate Limits](https://apis.io/rate-limits/microsoft-bing/microsoft-bing-rate-limits/)
 
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Search
-- Videos
-- Azure AI
+- [Microsoft Bing Finops](https://apis.io/finops/microsoft-bing/microsoft-bing-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-video-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### Bing News Search API
-
-The Bing News Search API returns relevant news articles from across the web for a given query.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- News
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Bing Entity Search API
-
-The Bing Entity Search API returns structured information about people, places, organizations, and other entities.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- Entities
-- Knowledge Graph
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Bing Autosuggest API
-
-The Bing Autosuggest API provides intelligent search query suggestions as users type.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- Autosuggest
-- Autocomplete
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Bing Spell Check API
-
-The Bing Spell Check API provides contextual spell checking using machine learning models.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- Spell Check
-- NLP
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-spell-check/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Bing Visual Search API
-
-The Bing Visual Search API enables image-based search by analyzing uploaded images or image URLs.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- Visual Search
-- Image Recognition
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-visual-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Bing Custom Search API
-
-The Bing Custom Search API allows developers to create tailored search experiences by defining a custom view of the web.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- Custom Search
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Bing Local Business Search API
-
-The Bing Local Business Search API returns information about local businesses based on search queries and location.
-
-- **Human URL:** [https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview](https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview)
-- **Base URL:** `https://api.bing.microsoft.com/`
-
-#### Tags
-
-- Search
-- Local Business
-- Places
-- Azure AI
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/bing/search-apis/bing-local-business-search/overview)
-- [Postman Collection](collections/microsoft-bing.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-bing.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/microsoft)
-- [Portal](https://portal.azure.com/)
+- [Website](https://www.microsoft.com/)
+- [Getting started](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/quickstarts/quickstart)
 - [Pricing](https://www.microsoft.com/en-us/bing/apis/pricing)
-- [Getting Started](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/quickstarts/quickstart)
-- [Authentication](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/create-bing-search-service-resource)
-- [S D Ks](https://learn.microsoft.com/en-us/bing/search-apis/bing-web-search/quickstarts/sdk/web-search-client-library)
-- [Terms of Service](https://www.microsoft.com/en-us/bing/apis/legal)
-- [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
 - [Support](https://support.microsoft.com/)
+- [Blog](https://blogs.bing.com/search/feed)
+- [Terms of service](https://www.microsoft.com/en-us/bing/apis/legal)
+- [Privacy policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [GitHub](https://github.com/microsoft)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Microsoft Bing: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/microsoft-bing/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
